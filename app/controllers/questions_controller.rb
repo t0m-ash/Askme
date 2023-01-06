@@ -8,7 +8,7 @@ class QuestionsController < ApplicationController
   end
 
   def update
-    @question=Question.find(params[:id])
+    @question = Question.find(params[:id])
     @question.update(
       body: params[:question][:body],
       user_id: params[:question][:user_id]
@@ -16,7 +16,15 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    @question=Question.find(params[:id])
+    @question = Question.find(params[:id])
     @question.destroy
+  end
+
+  def show
+    @question = Question.find(params[:id])
+  end
+
+  def index
+    @question = Question.all
   end
 end
