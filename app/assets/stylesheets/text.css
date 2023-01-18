@@ -1,0 +1,26 @@
+body {
+  color: #131619;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+a,
+button {
+  color: #4c0f73;
+}
+
+.title-lg {
+  font-size: 175%;
+}
+
+.title-md,
+.title {
+  font-size: 150%;
+}
+
+.title-sm {
+  font-size: 125%;
+}
+
+.text-sm {
+  font-size: 80%;
+}
