@@ -24,3 +24,7 @@ button {
 .text-sm {
   font-size: 80%;
 }
+
+.text-gray{
+  color: #a0a0a0;
+}

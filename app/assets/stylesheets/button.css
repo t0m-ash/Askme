@@ -11,3 +11,7 @@
 .button_main {
   background-color: #ee1144;
 }
+
+.button:hover {
+  background-color: #be0e36;
+}
