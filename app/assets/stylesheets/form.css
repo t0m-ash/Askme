@@ -13,6 +13,7 @@
 
 .form-text-area {
   max-width: 760px;
+  min-width: 760px;
   box-sizing: border-box;
   width: 100%;
 }

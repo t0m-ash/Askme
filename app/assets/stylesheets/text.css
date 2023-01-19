@@ -3,11 +3,6 @@ body {
   font-family: "Trebuchet MS", sans-serif;
 }
 
-a,
-button {
-  color: #4c0f73;
-}
-
 .title-lg {
   font-size: 175%;
 }
@@ -25,6 +20,10 @@ button {
   font-size: 80%;
 }
 
-.text-gray{
+.text-gray {
   color: #a0a0a0;
+}
+
+.text-logo {
+  font-weight: bold;
 }

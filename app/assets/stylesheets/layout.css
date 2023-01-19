@@ -10,8 +10,24 @@ body {
   width: 100%;
 }
 
-.container {
+.container,
+.navbar {
   background: #fff;
   border-radius: 8px;
+}
+
+.container,
+.navbar {
   padding: 20px;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.navbar a {
+  text-decoration: none;
 }
