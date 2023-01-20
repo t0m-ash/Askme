@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="title">Присоединйся и спрашивай!</h2>
+  <h2 class="title">Редактирование пользователя</h2>
 
   <% if @user.errors.any?%>
     <div class="mt">
@@ -8,7 +8,7 @@
       <% end %>
     </div>
   <% end %>
-  
+
   <div class="mt">
     <%= form_with model: @user, data: {turbo: false} do |form| %>
 
@@ -20,6 +20,8 @@
       
       <p class="mt"><%= form.label :email %></p>
       <p><%= form.text_field :email, class: "form-text-field" %></p>
+
+      <p class="mt-lg text-sm">Если не хотите менять пароль - оставьте поля пустыми!</p>
       
       <p class="mt"><%= form.label :password %></p>
       <p><%= form.password_field :password, class: "form-text-field" %></p>
@@ -27,7 +29,14 @@
       <p class="mt"><%= form.label :password_confirmation %></p>
       <p><%= form.password_field :password_confirmation, class: "form-text-field" %></p>
 
-      <p class="mt-lg"><%= form.submit "Зарегистрироваться", class: "button button_main" %></p>
+      <p class="mt-lg">
+        <%= form.submit "Сохранить", class: "button button_main" %>
+        <span class="text-sm"> или <%= link_to "вернуться", :back %></span>
+      </p>
     <% end %>
+  </div>
+
+  <div class="mt-lg">
+    <%= button_to "Удалить профиль", user_path(@user), method: :delete, form: {data: {turbo_confirm: "Вы точно хотите удалить свой профиль?"}}, class: 'text-red text-sm' %>
   </div>
 </div>

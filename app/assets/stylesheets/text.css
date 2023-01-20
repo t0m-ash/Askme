@@ -24,6 +24,10 @@ body {
   color: #a0a0a0;
 }
 
+.text-red {
+  color: #ee1144;
+}
+
 .text-logo {
   font-weight: bold;
 }
